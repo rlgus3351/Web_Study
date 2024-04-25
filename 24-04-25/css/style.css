@@ -150,15 +150,16 @@ body{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 500px;
+        width: 100%;
         height: 400px;
     }
     .container .slide .item{
-        width: 100px;
-        height: 200px;
+        width: 50px;
+        height: 100px;
         position: absolute;
+        border-radius: 10px;
         top: 50%;
-        transform: translate(80%, -50%);
+        transform: translate(70%, -50%);
     }
     .slide .item:nth-child(1),
     .slide .item:nth-child(2){
@@ -169,9 +170,24 @@ body{
         width: 100%;
         height: 100%;
     }
+    .slide .item:nth-child(3){
+        left: 40%;
+    }
+    .slide .item:nth-child(4){
+        left: calc(40% + 70px);
+    }
+    .slide .item:nth-child(5){
+        left: calc(40% + 140px);
+    }
+    
+    /* here n = 0, 1, 2, 3,... */
+    .slide .item:nth-child(n + 6){
+        left: calc(40% + 210px);
+        opacity: 0;
+    }
+    
     .content .name{
         font-size: 20px;
-
         text-transform: uppercase;
         font-weight: bold;
         opacity: 0;
@@ -184,7 +200,7 @@ body{
         width: 300px;
         text-align: left;
         color: #eee;
-        transform: translate(0, -50%);
+        transform: translate(-15%, -50%);
         font-family: system-ui;
         display: none;
     }
