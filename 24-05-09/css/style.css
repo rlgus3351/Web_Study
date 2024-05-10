@@ -107,6 +107,24 @@
         max-width: 968px;
         margin: auto;
     }
+    .row
+    {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    /* ========== Reusable css classes ========== */
+    .section .container
+    {
+        padding-top: 3.75rem;
+        padding-bottom: 4.75rem;
+    }
+    .section-title
+    {
+        font-size: 2.25rem;
+        margin-left: var(--m-0-75);
+        margin-bottom: var(--m-2-5);
+    }
     .padd-15
     {
         padding-left: 15px;
@@ -342,3 +360,201 @@
         display: block;
         animation : ani-mouse 2s linear infinite;
     }
+
+    /* ========== ABOUT ========== */
+    .about-img
+    {
+        flex: 0 0 25%;
+        max-width: 25%;
+        
+    }
+    .about-content
+    {
+        flex: 0 0 75%;
+        max-width: 75%;
+        
+    }
+    .about-content .about-text,
+    .about-content .skills
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .rounded
+    {
+        background-color: var(--color-white);
+        padding: var(--card-padding);
+        border-radius: var(--border-radius);
+    } 
+    .about-text p
+    {
+        text-align: justify;
+        margin-bottom: var(--m-1);
+    }
+    .about-content .skills .skill-item
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .about-content .skills .skill-item h4
+    {
+        margin-bottom: var(--m-0-75);
+    }
+    .about-content .skills .skill-item .progress
+    {
+        background-color: var(--color-light);
+        height: 0.45rem;
+        border-radius: var(--border-radius);
+        width: 100%;
+        position : relative;
+    }
+
+    .about-content .skills .skill-item:not(:last-child)
+    {
+        margin-bottom: var(--m-1-5);
+    }
+    .about-content .skills .skill-item .progress .progress-in
+    {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        border-radius: var(--border-radius);
+    }
+    .about-content .skills .skill-item .skill-percent
+    {
+        position: absolute;
+        right: 0;
+        top : -2.5rem;
+    }
+    .fact-item
+    {
+        flex : 0 0 25%;
+        max-width: 25%;
+        margin-top: var(--m-2-5);
+        text-align: center;
+    }
+
+    .fact-item i
+    {
+        font-size: var(--h2-font-size);
+        color: var(--color-gray);
+    }
+    
+    /* ========== SERVICES ========== */
+    .services .service-item
+    {
+        flex :  0 33.33%;
+        max-width: 33.33%;
+        display: flex;   
+    }
+
+    .services .service-item .service-item-inner
+    {
+        border-radius: var(--border-radius);
+        padding: var(--card-padding);
+        text-align: center;
+        transform: translateY(0);
+        transition: 0.3s;
+    }
+    .services .service-item .service-item-inner:hover
+    {
+        transform: translateY(-0.625rem);
+    }
+
+    .services .service-item img
+    {
+        margin-bottom: --,var(--m-0-75);
+    }
+    .service-item h3
+    {
+        margin-bottom: var(--m-0-5);
+        color:#fff;
+    }
+
+    .service-item p
+    {
+        color:#fff;
+    }
+
+    .text
+    {
+        text-align: center;
+        margin-top: var(--m-1-5);
+    }
+    .text a{
+        color: var(--color-primary);
+    }
+
+    /* ========== EXPERIENCE ========== */
+    .education
+    {
+        flex : 0 0 50%;
+        max-width: 50%;
+    }
+    .experience
+    {
+        flex : 0 0 50%;
+        max-width : 50%;
+    }
+    .timeline-box
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .timeline
+    {
+        background-color: var(--color-white);
+        padding : 1.9rem 0.95rem;
+        border-radius: var(--border-radius);
+        width: 100%;
+        position: relative;
+    }
+    .timeline .timeline-item
+    {
+        position: relative;
+        padding-left: 2.5rem;
+        padding-bottom: 1.9rem;
+    }
+
+    .timeline .timeline-item:last-child
+    {
+        padding-bottom: 0;
+    }
+
+    .timeline .timeline-item::before{
+        content: '';
+        width: 1px;
+        position: absolute;
+        height:100%;
+        left: var(--m-0-5);
+        background-color: var(--color-primary);
+        top:0;
+    }
+    .timeline .timeline-icon
+    {
+        position: absolute;
+        left: -0.25rem;
+        top:0;
+        font-size: 1.5rem;
+        background-color: var(--color-white);
+        color: var(--color-primary);
+    }
+    .timeline .timeline-date
+    {
+        font-size: var(--small-font-size);
+        color: var(--color-gray);
+    }
+    
+    .timeline .timeline-date .lni
+    {
+        margin-right: 0.3rem;
+    }
+    .timeline .timeline-title
+    {
+        margin : var(--m-0-75) 0;
+    }
+
+    
+
