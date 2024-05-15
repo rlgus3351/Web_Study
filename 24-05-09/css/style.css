@@ -643,7 +643,7 @@
         border-bottom-right-radius: 0;
     }
 
-     /* ========== PORTFOLIO ========== */
+    /* ========== PORTFOLIO ========== */
     .portfolio .portfolio-filter
     {
         flex :  0 0 100%;
@@ -653,4 +653,5 @@
     .portfolio .portfolio-filter button
     {
         border: none;
+        
     }
